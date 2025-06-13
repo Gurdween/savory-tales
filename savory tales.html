@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Savory Tales - Where Every Dish Tells a Story</title>
+<script src="https://cdn.tailwindcss.com/3.4.16"></script>
+<script>tailwind.config={theme:{extend:{colors:{primary:'#8B2635',secondary:'#D4AF37'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Open+Sans:wght@300;400;500;600&family=Montserrat:wght@400;500;600&family=Lora:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+<style>
+:where([class^="ri-"])::before { content: "\f3c2"; }
+body {
+font-family: 'Open Sans', sans-serif;
+color: #333333;
+}
+h1, h2, h3, h4, h5, h6 {
+font-family: 'Playfair Display', serif;
+}
+.blog-title {
+font-family: 'Montserrat', sans-serif;
+}
+.accent-text {
+font-family: 'Lora', serif;
+font-style: italic;
+}
+.hero-section {
+background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://readdy.ai/api/search-image?query=elegant%20restaurant%20interior%20with%20warm%20lighting%2C%20wooden%20tables%2C%20comfortable%20seating%2C%20wine%20glasses%2C%20and%20a%20cozy%20atmosphere.%20The%20image%20should%20show%20a%20sophisticated%20dining%20area%20with%20soft%20ambient%20lighting%2C%20creating%20an%20inviting%20and%20upscale%20dining%20experience&width=1200&height=600&seq=1&orientation=landscape');
+background-size: cover;
+background-position: center;
+}
+input:focus {
+outline: none;
+}
+</style>
+</head>
+<body class="min-h-screen bg-[#FFF5E6]/10">
+<!-- Header Navigation -->
+<header class="fixed w-full bg-white shadow-md z-50">
+<div class="container mx-auto px-6 py-3 flex items-center justify-between">
+<div class="flex items-center">
+<div class="flex items-center gap-2">
+<div class="w-10 h-10 flex items-center justify-center text-primary">
+<i class="ri-fork-fill ri-lg"></i>
+</div>
+<h1 class="text-2xl font-['Pacifico'] text-primary">Savory Tales</h1>
+</div>
+<nav class="hidden md:flex ml-10">
+<ul class="flex space-x-8">
+<li><a href="#" class="text-gray-800 hover:text-primary font-medium transition-colors">Home</a></li>
+<li><a href="#" class="text-gray-800 hover:text-primary font-medium transition-colors">Menu</a></li>
+<li><a href="#" class="text-gray-800 hover:text-primary font-medium transition-colors">Blog</a></li>
+<li><a href="#" class="text-gray-800 hover:text-primary font-medium transition-colors">About</a></li>
+<li><a href="#" class="text-gray-800 hover:text-primary font-medium transition-colors">Contact</a></li>
+</ul>
+</nav>
+</div>
+<button class="bg-primary text-white px-5 py-2 !rounded-button whitespace-nowrap hover:bg-primary/90 transition-colors">
+Reserve a Table
+</button>
+</div>
+</header>
+<!-- Hero Section -->
+<section class="hero-section pt-28 pb-20 flex items-center min-h-[600px]">
+<div class="container mx-auto px-6 w-full">
+<div class="max-w-2xl text-white">
+<h1 class="text-5xl font-bold mb-4">Savory Tales</h1>
+<p class="text-xl mb-8 accent-text">Where Every Dish Tells a Story</p>
+<p class="mb-8 text-lg">Experience culinary excellence with our carefully crafted dishes that blend tradition with innovation. Each plate is a chapter in our gastronomic journey.</p>
+<div class="flex flex-wrap gap-4">
+<button class="bg-primary text-white px-6 py-3 !rounded-button whitespace-nowrap hover:bg-primary/90 transition-colors">
+View Menu
+</button>
+<button class="bg-white text-primary px-6 py-3 !rounded-button whitespace-nowrap hover:bg-white/90 transition-colors">
+Read Our Blog
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Services Section -->
+<section class="py-16 bg-white">
+<div class="container mx-auto px-6">
+<div class="text-center mb-12">
+<h2 class="text-4xl font-bold text-gray-800 mb-3">Our Services</h2>
+<p class="text-lg text-gray-600 max-w-2xl mx-auto">Experience exceptional dining with our comprehensive range of culinary services</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Service Card 1 -->
+<div class="bg-[#FFF5E6]/30 rounded-lg p-8 text-center hover:shadow-lg transition-all">
+<div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+<i class="ri-restaurant-line text-primary ri-2x"></i>
+</div>
+<h3 class="text-xl font-bold mb-4">Fine Dining</h3>
+<p class="text-gray-600">Experience exquisite cuisine in an elegant atmosphere with our carefully curated seasonal menus and premium wine selection.</p>
+</div>
+<!-- Service Card 2 -->
+<div class="bg-[#FFF5E6]/30 rounded-lg p-8 text-center hover:shadow-lg transition-all">
+<div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+<i class="ri-group-line text-primary ri-2x"></i>
+</div>
+<h3 class="text-xl font-bold mb-4">Private Events</h3>
+<p class="text-gray-600">Host your special occasions in our elegant private dining rooms with customized menus and dedicated service staff.</p>
+</div>
+<!-- Service Card 3 -->
+<div class="bg-[#FFF5E6]/30 rounded-lg p-8 text-center hover:shadow-lg transition-all">
+<div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+<i class="ri-takeaway-line text-primary ri-2x"></i>
+</div>
+<h3 class="text-xl font-bold mb-4">Catering</h3>
+<p class="text-gray-600">Bring our exceptional cuisine to your location with our premium catering services for events of any size.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- About Us Section -->
+<section class="py-16 bg-[#FFF5E6]/30">
+<div class="container mx-auto px-6">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+<div class="relative">
+<img src="https://readdy.ai/api/search-image?query=professional%20chefs%20working%20in%20a%20modern%20restaurant%20kitchen%2C%20preparing%20gourmet%20dishes%20with%20fresh%20ingredients.%20The%20image%20should%20show%20teamwork%2C%20passion%20for%20cooking%2C%20and%20attention%20to%20detail%20in%20a%20clean%2C%20well-organized%20kitchen%20environment&width=600&height=800&seq=9&orientation=portrait" alt="Our Kitchen" class="rounded-lg shadow-lg w-full h-[600px] object-cover object-top">
+<div class="absolute -bottom-6 -right-6 bg-white p-4 rounded-lg shadow-lg hidden lg:block">
+<div class="flex items-center gap-4">
+<div class="text-center">
+<p class="text-4xl font-bold text-primary">15+</p>
+<p class="text-gray-600">Years of Excellence</p>
+</div>
+<div class="w-px h-12 bg-gray-200"></div>
+<div class="text-center">
+<p class="text-4xl font-bold text-primary">4.9</p>
+<p class="text-gray-600">Customer Rating</p>
+</div>
+</div>
+</div>
+</div>
+<div>
+<h2 class="text-4xl font-bold text-gray-800 mb-6">Our Culinary Journey</h2>
+<p class="text-lg text-gray-600 mb-6">At Savory Tales, we believe that every dish tells a story. Our journey began in 2010 with a simple vision: to create extraordinary dining experiences that combine traditional flavors with modern innovation.</p>
+<div class="space-y-4 mb-8">
+<div class="flex items-start gap-4">
+<div class="w-8 h-8 flex-shrink-0 bg-primary/10 rounded-full flex items-center justify-center">
+<i class="ri-check-line text-primary"></i>
+</div>
+<div>
+<h4 class="font-bold text-gray-800 mb-1">Farm-to-Table Philosophy</h4>
+<p class="text-gray-600">We partner with local farmers to source the freshest seasonal ingredients for our dishes.</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<div class="w-8 h-8 flex-shrink-0 bg-primary/10 rounded-full flex items-center justify-center">
+<i class="ri-check-line text-primary"></i>
+</div>
+<div>
+<h4 class="font-bold text-gray-800 mb-1">Expert Culinary Team</h4>
+<p class="text-gray-600">Our talented chefs bring decades of combined experience from renowned restaurants worldwide.</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<div class="w-8 h-8 flex-shrink-0 bg-primary/10 rounded-full flex items-center justify-center">
+<i class="ri-check-line text-primary"></i>
+</div>
+<div>
+<h4 class="font-bold text-gray-800 mb-1">Sustainable Practices</h4>
+<p class="text-gray-600">We're committed to eco-friendly operations and reducing our environmental impact.</p>
+</div>
+</div>
+</div>
+<button class="bg-primary text-white px-6 py-3 !rounded-button whitespace-nowrap hover:bg-primary/90 transition-colors">
+Learn More About Us
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Blog Section -->
+<section class="py-16 bg-white">
+<div class="container mx-auto px-6">
+<div class="text-center mb-12">
+<h2 class="text-4xl font-bold text-gray-800 mb-3">Food Chronicles</h2>
+<p class="text-lg text-gray-600 max-w-2xl mx-auto">Discover the stories behind our dishes, learn about food awareness, and stay updated with our latest culinary creations.</p>
+</div>
+<!-- Filter Tabs -->
+<div class="flex justify-center mb-10">
+<div class="inline-flex bg-gray-100 p-1 !rounded-full">
+<button data-filter="all" class="px-6 py-2 !rounded-full whitespace-nowrap bg-primary text-white">All Posts</button>
+<button data-filter="new-dish" class="px-6 py-2 !rounded-full whitespace-nowrap text-gray-700 hover:bg-gray-200 transition-colors">New Dishes</button>
+<button data-filter="price-update" class="px-6 py-2 !rounded-full whitespace-nowrap text-gray-700 hover:bg-gray-200 transition-colors">Price Updates</button>
+<button data-filter="food-awareness" class="px-6 py-2 !rounded-full whitespace-nowrap text-gray-700 hover:bg-gray-200 transition-colors">Food Awareness</button>
+</div>
+</div>
+<!-- Featured Blog Post -->
+<div class="mb-16 overflow-hidden rounded-lg shadow-lg group">
+<div class="relative h-[400px]">
+<img src="https://readdy.ai/api/search-image?query=beautifully%20plated%20seasonal%20dish%20with%20fresh%20organic%20ingredients%2C%20vibrant%20colors%2C%20artfully%20arranged%20on%20a%20dark%20ceramic%20plate.%20The%20dish%20features%20locally%20sourced%20vegetables%2C%20herbs%2C%20and%20protein%2C%20showcasing%20farm-to-table%20cuisine%20with%20professional%20food%20photography%20lighting&width=1200&height=400&seq=2&orientation=landscape" alt="Seasonal Menu Launch" class="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105">
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex flex-col justify-end p-8">
+<span class="bg-secondary text-white px-3 py-1 rounded-full text-sm font-medium mb-3 inline-block">New Seasonal Menu</span>
+<h3 class="text-3xl font-bold text-white mb-3 blog-title">Introducing Our Summer Harvest Menu: A Celebration of Local Flavors</h3>
+<p class="text-white/90 mb-4">Experience the vibrant tastes of summer with our new menu featuring locally sourced ingredients from farmers within 50 miles of our restaurant. Each dish tells the story of sustainable agriculture and exceptional flavor.</p>
+<div class="flex items-center justify-between">
+<span class="text-white/80">June 10, 2025</span>
+<button class="bg-primary text-white px-5 py-2 !rounded-button whitespace-nowrap hover:bg-primary/90 transition-colors">
+Read Full Story
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Blog Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Blog Card 1 -->
+<div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow">
+<div class="h-60 overflow-hidden">
+<img src="https://readdy.ai/api/search-image?query=organic%20farm%20vegetables%20freshly%20harvested%2C%20with%20soil%20still%20on%20them%2C%20arranged%20in%20wooden%20crates.%20Image%20shows%20a%20variety%20of%20colorful%20vegetables%20including%20carrots%2C%20tomatoes%2C%20lettuce%2C%20and%20herbs%20in%20natural%20lighting&width=400&height=240&seq=3&orientation=landscape" alt="Organic Sourcing" class="w-full h-full object-cover object-top transition-transform duration-500 hover:scale-105">
+</div>
+<div class="p-6">
+<span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-xs font-medium mb-3 inline-block">Food Awareness</span>
+<h3 class="text-xl font-bold mb-3 blog-title">Our Commitment to Organic Sourcing: Meet Our Local Farmers</h3>
+<p class="text-gray-600 mb-4 line-clamp-2">Discover the faces behind the ingredients on your plate. We've partnered with five local organic farms to bring you the freshest seasonal produce.</p>
+<div class="flex items-center justify-between">
+<span class="text-gray-500 text-sm">June 8, 2025</span>
+<a href="#" class="text-primary font-medium hover:underline">Read more</a>
+</div>
+</div>
+</div>
+<!-- Blog Card 2 -->
+<div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow">
+<div class="h-60 overflow-hidden">
+<img src="https://readdy.ai/api/search-image?query=elegant%20plated%20dessert%20with%20chocolate%20mousse%2C%20berries%2C%20and%20gold%20leaf.%20The%20dessert%20is%20artfully%20presented%20on%20a%20white%20plate%20with%20decorative%20sauce%20patterns%2C%20photographed%20with%20professional%20food%20photography%20lighting&width=400&height=240&seq=4&orientation=landscape" alt="New Dessert" class="w-full h-full object-cover object-top transition-transform duration-500 hover:scale-105">
+</div>
+<div class="p-6">
+<span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-xs font-medium mb-3 inline-block">New Dish</span>
+<h3 class="text-xl font-bold mb-3 blog-title">Introducing Our Signature Chocolate Symphony Dessert</h3>
+<p class="text-gray-600 mb-4 line-clamp-2">Our pastry chef Elizabeth Morgan unveils her latest creation—a decadent chocolate dessert featuring five different textures of chocolate paired with seasonal berries.</p>
+<div class="flex items-center justify-between">
+<span class="text-gray-500 text-sm">June 5, 2025</span>
+<a href="#" class="text-primary font-medium hover:underline">Read more</a>
+</div>
+</div>
+</div>
+<!-- Blog Card 3 -->
+<div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow">
+<div class="h-60 overflow-hidden">
+<img src="https://readdy.ai/api/search-image?query=wine%20bottles%20and%20glasses%20in%20a%20cellar%20or%20wine%20rack%2C%20with%20soft%20lighting%20highlighting%20premium%20wines.%20The%20image%20should%20show%20elegant%20wine%20storage%20with%20wooden%20elements%20and%20a%20sophisticated%20atmosphere&width=400&height=240&seq=5&orientation=landscape" alt="Wine Selection" class="w-full h-full object-cover object-top transition-transform duration-500 hover:scale-105">
+</div>
+<div class="p-6">
+<span class="bg-amber-100 text-amber-800 px-3 py-1 rounded-full text-xs font-medium mb-3 inline-block">Price Update</span>
+<h3 class="text-xl font-bold mb-3 blog-title">Expanded Wine Selection: New Additions and Price Adjustments</h3>
+<p class="text-gray-600 mb-4 line-clamp-2">We're excited to announce 15 new additions to our wine list from small-batch vineyards, along with price adjustments to make fine dining more accessible.</p>
+<div class="flex items-center justify-between">
+<span class="text-gray-500 text-sm">June 1, 2025</span>
+<a href="#" class="text-primary font-medium hover:underline">Read more</a>
+</div>
+</div>
+</div>
+<!-- Blog Card 4 -->
+<div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow">
+<div class="h-60 overflow-hidden">
+<img src="https://readdy.ai/api/search-image?query=chef%20demonstrating%20cooking%20techniques%20in%20a%20professional%20kitchen%2C%20wearing%20chef%20whites%20and%20showing%20ingredients.%20The%20image%20should%20capture%20the%20chef%20in%20action%20with%20cooking%20utensils%20and%20fresh%20ingredients%20visible&width=400&height=240&seq=6&orientation=landscape" alt="Cooking Class" class="w-full h-full object-cover object-top transition-transform duration-500 hover:scale-105">
+</div>
+<div class="p-6">
+<span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-xs font-medium mb-3 inline-block">Food Awareness</span>
+<h3 class="text-xl font-bold mb-3 blog-title">Join Our Monthly Cooking Classes: Learn From Our Executive Chef</h3>
+<p class="text-gray-600 mb-4 line-clamp-2">Starting July, our executive chef Daniel Wilson will host monthly cooking classes focusing on sustainable cooking techniques and reducing food waste.</p>
+<div class="flex items-center justify-between">
+<span class="text-gray-500 text-sm">May 28, 2025</span>
+<a href="#" class="text-primary font-medium hover:underline">Read more</a>
+</div>
+</div>
+</div>
+<!-- Blog Card 5 -->
+<div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow">
+<div class="h-60 overflow-hidden">
+<img src="https://readdy.ai/api/search-image?query=artisanal%20pasta%20dish%20with%20handmade%20pasta%2C%20fresh%20herbs%2C%20and%20grated%20cheese.%20The%20pasta%20should%20be%20beautifully%20plated%20on%20a%20rustic%20ceramic%20dish%20with%20professional%20food%20photography%20lighting&width=400&height=240&seq=7&orientation=landscape" alt="Pasta Special" class="w-full h-full object-cover object-top transition-transform duration-500 hover:scale-105">
+</div>
+<div class="p-6">
+<span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-xs font-medium mb-3 inline-block">New Dish</span>
+<h3 class="text-xl font-bold mb-3 blog-title">Handcrafted Pasta: Our New In-House Specialty</h3>
+<p class="text-gray-600 mb-4 line-clamp-2">We're proud to announce that all pasta dishes now feature our handmade pasta, crafted daily using traditional Italian techniques and local organic eggs.</p>
+<div class="flex items-center justify-between">
+<span class="text-gray-500 text-sm">May 22, 2025</span>
+<a href="#" class="text-primary font-medium hover:underline">Read more</a>
+</div>
+</div>
+</div>
+<!-- Blog Card 6 -->
+<div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow">
+<div class="h-60 overflow-hidden">
+<img src="https://readdy.ai/api/search-image?query=lunch%20menu%20items%20displayed%20on%20a%20wooden%20table%2C%20including%20salads%2C%20sandwiches%2C%20and%20small%20plates.%20The%20image%20should%20show%20a%20variety%20of%20lunch%20options%20with%20bright%2C%20fresh%20ingredients%20in%20natural%20lighting&width=400&height=240&seq=8&orientation=landscape" alt="Lunch Menu" class="w-full h-full object-cover object-top transition-transform duration-500 hover:scale-105">
+</div>
+<div class="p-6">
+<span class="bg-amber-100 text-amber-800 px-3 py-1 rounded-full text-xs font-medium mb-3 inline-block">Price Update</span>
+<h3 class="text-xl font-bold mb-3 blog-title">New Affordable Lunch Menu: Quality Dining at Accessible Prices</h3>
+<p class="text-gray-600 mb-4 line-clamp-2">We've revamped our lunch menu to offer more affordable options without compromising on quality. Enjoy our signature dishes at special weekday lunch prices.</p>
+<div class="flex items-center justify-between">
+<span class="text-gray-500 text-sm">May 15, 2025</span>
+<a href="#" class="text-primary font-medium hover:underline">Read more</a>
+</div>
+</div>
+</div>
+</div>
+<div class="text-center mt-12">
+<button class="bg-white border border-primary text-primary px-6 py-3 !rounded-button whitespace-nowrap hover:bg-primary/5 transition-colors">
+Load More Stories
+</button>
+</div>
+</div>
+</section>
+<!-- Newsletter Section -->
+<section class="py-16 bg-[#FFF5E6]/30">
+<div class="container mx-auto px-6">
+<div class="max-w-2xl mx-auto text-center">
+<h2 class="text-3xl font-bold mb-4">Stay Updated with Our Food Stories</h2>
+<p class="text-gray-600 mb-8">Subscribe to our newsletter and be the first to know about new dishes, special events, and exclusive culinary insights.</p>
+<div class="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
+<div class="flex-grow relative">
+<div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+<i class="ri-mail-line text-gray-400"></i>
+</div>
+<input type="email" class="w-full pl-10 pr-4 py-3 border-none rounded bg-white shadow-sm focus:ring-2 focus:ring-primary/20" placeholder="Your email address">
+</div>
+<button class="bg-primary text-white px-6 py-3 !rounded-button whitespace-nowrap hover:bg-primary/90 transition-colors">
+Subscribe
+</button>
+</div>
+<p class="text-gray-500 text-sm mt-4">We respect your privacy. Unsubscribe at any time.</p>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-gray-900 text-white pt-16 pb-8">
+<div class="container mx-auto px-6">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+<div>
+<div class="flex items-center gap-2 mb-4">
+<div class="w-10 h-10 flex items-center justify-center text-secondary">
+<i class="ri-fork-fill ri-lg"></i>
+</div>
+<h3 class="text-xl font-['Pacifico'] text-white">Savory Tales</h3>
+</div>
+<p class="text-gray-400 mb-4">Where every dish tells a story and every meal creates a memory.</p>
+<div class="flex space-x-4">
+<a href="#" class="w-8 h-8 flex items-center justify-center rounded-full bg-gray-800 hover:bg-primary transition-colors">
+<i class="ri-facebook-fill"></i>
+</a>
+<a href="#" class="w-8 h-8 flex items-center justify-center rounded-full bg-gray-800 hover:bg-primary transition-colors">
+<i class="ri-instagram-fill"></i>
+</a>
+<a href="#" class="w-8 h-8 flex items-center justify-center rounded-full bg-gray-800 hover:bg-primary transition-colors">
+<i class="ri-twitter-x-fill"></i>
+</a>
+<a href="#" class="w-8 h-8 flex items-center justify-center rounded-full bg-gray-800 hover:bg-primary transition-colors">
+<i class="ri-pinterest-fill"></i>
+</a>
+</div>
+</div>
+<div>
+<h4 class="text-lg font-bold mb-4">Contact Us</h4>
+<ul class="space-y-3 text-gray-400">
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center mt-1 mr-2 text-secondary">
+<i class="ri-map-pin-line"></i>
+</div>
+<span>123 Culinary Avenue, Gourmet District, NY 10001</span>
+</li>
+<li class="flex items-center">
+<div class="w-5 h-5 flex items-center justify-center mr-2 text-secondary">
+<i class="ri-phone-line"></i>
+</div>
+<span>(212) 555-8765</span>
+</li>
+<li class="flex items-center">
+<div class="w-5 h-5 flex items-center justify-center mr-2 text-secondary">
+<i class="ri-mail-line"></i>
+</div>
+<span>info@savorytales.com</span>
+</li>
+<li class="flex items-center">
+<div class="w-5 h-5 flex items-center justify-center mr-2 text-secondary">
+<i class="ri-time-line"></i>
+</div>
+<span>Tue-Sun: 11:30 AM - 10:00 PM</span>
+</li>
+</ul>
+</div>
+<div>
+<h4 class="text-lg font-bold mb-4">Quick Links</h4>
+<ul class="space-y-2 text-gray-400">
+<li><a href="#" class="hover:text-white transition-colors">Home</a></li>
+<li><a href="#" class="hover:text-white transition-colors">Our Menu</a></li>
+<li><a href="#" class="hover:text-white transition-colors">Reservations</a></li>
+<li><a href="#" class="hover:text-white transition-colors">Private Events</a></li>
+<li><a href="#" class="hover:text-white transition-colors">Gift Cards</a></li>
+<li><a href="#" class="hover:text-white transition-colors">Careers</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-lg font-bold mb-4">Newsletter</h4>
+<p class="text-gray-400 mb-4">Subscribe to receive updates on special events and new menu items.</p>
+<div class="flex">
+<input type="email" class="w-full px-4 py-2 bg-gray-800 border-none rounded-l text-white" placeholder="Email address">
+<button class="bg-primary px-4 py-2 rounded-r !rounded-button-none whitespace-nowrap hover:bg-primary/90 transition-colors">
+<i class="ri-send-plane-fill"></i>
+</button>
+</div>
+<div class="mt-4 flex items-center space-x-3">
+<span class="text-gray-400 text-sm">We accept:</span>
+<div class="flex space-x-2">
+<i class="ri-visa-fill text-gray-300 text-xl"></i>
+<i class="ri-mastercard-fill text-gray-300 text-xl"></i>
+<i class="ri-paypal-fill text-gray-300 text-xl"></i>
+<i class="ri-apple-fill text-gray-300 text-xl"></i>
+</div>
+</div>
+</div>
+</div>
+<div class="border-t border-gray-800 pt-8 text-center text-gray-500 text-sm">
+<p>&copy; 2025 Savory Tales Restaurant. All rights reserved.</p>
+</div>
+</div>
+</footer>
+<script id="filterTabs">
+document.addEventListener('DOMContentLoaded', function() {
+    const filterButtons = document.querySelectorAll('[data-filter]');
+    const blogPosts = document.querySelectorAll('.grid.grid-cols-1.md\\:grid-cols-2.lg\\:grid-cols-3 > div');
+    const featuredPost = document.querySelector('.mb-16.overflow-hidden.rounded-lg.shadow-lg.group');
+    function filterPosts(category) {
+        const posts = [featuredPost, ...blogPosts];
+        posts.forEach(post => {
+            if (!post) return;
+            const categorySpan = post.querySelector('span');
+            if (!categorySpan) return;
+            
+            const categoryText = categorySpan.textContent.toLowerCase();
+            const shouldShow = 
+                category === 'all' ||
+                (category === 'new-dish' && (categoryText.includes('new dish') || categoryText.includes('seasonal menu'))) ||
+                (category === 'price-update' && categoryText.includes('price update')) ||
+                (category === 'food-awareness' && categoryText.includes('food awareness'));
+            post.style.display = shouldShow ? '' : 'none';
+        });
+    }
+    filterButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            filterButtons.forEach(btn => {
+                btn.classList.remove('bg-primary', 'text-white');
+                btn.classList.add('text-gray-700', 'hover:bg-gray-200');
+            });
+            
+            this.classList.add('bg-primary', 'text-white');
+            this.classList.remove('text-gray-700', 'hover:bg-gray-200');
+            
+            const category = this.getAttribute('data-filter');
+            filterPosts(category);
+        });
+    });
+    // Initial filter (show all)
+    filterPosts('all');
+});
+</script>
+<script id="mobileNavigation">
+document.addEventListener('DOMContentLoaded', function() {
+// This would be where mobile navigation toggle functionality would go
+// For this demo, we're keeping it simple without mobile menu implementation
+});
+</script>
+</body>
+</html>
